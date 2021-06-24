@@ -31,6 +31,9 @@ html, body, figure, figcaption, img, div, p, h1, h2, h3, h4, ul, li, a, main {
 body{
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(62, 151, 173);
+    background-image: url(../img/Imagem-Fundo-1920.jpg);
+    background-attachment: fixed;
+    background-size: 40%;
 }
 
 /*   HEADER   */
