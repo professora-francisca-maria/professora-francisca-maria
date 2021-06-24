@@ -1,14 +1,41 @@
-body{
-    margin: 8px;
+/*
+-----------------------------------------------------------
+ESTRUTURA BASE
+-----------------------------------------------------------
+***** ESTILOS GERAIS
+***** DECLARAÇÃO DE VARIÁVEIS 
+***** BODY
+***** HEADER
+***** MAIN
+***** FOOTER
+***** RESPONSIVIDADE
+***** EXTRAS
+*/
+
+
+/*   ESTILOS GERAIS   */
+html, body, figure, figcaption, img, div, p, h1, h2, h3, h4, ul, li, a, main {
+    margin: 8;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
-    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
+/*   DECLARAÇÃO DE VARIÁVEIS   */
+:root{
+    --corPrimaria: #722F37;
+}
 
+/*   BODY   */
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(62, 151, 173);
+}
 
+/*   HEADER   */
 header{
-    background-color: rgb(145, 11, 93);
+    background-color: var(--corPrimaria);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -28,11 +55,13 @@ header h1{
     margin: 10px;
 }
 
+/*   MAIN   */
 main{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     margin: 10px 0;
+    padding: 30px;
 }
 main div p{
     background-color: rgb(151, 155, 158);
@@ -49,9 +78,10 @@ main h2{
     
 }
 
+/*   FOOTER   */
 footer{
-    background-color: rgb(145, 11, 93);
-    padding: 10px;
+    background-color: var(--corPrimaria);
+    padding: 30px;
     color: white;
     border-radius: 10px;
 }
@@ -64,7 +94,7 @@ footer ul{
     padding: 7px;
 }
 footer ul li{
-    list-style-type: none;
+    line-height: 23px;
 }
 
 footer h4 a{
@@ -72,16 +102,19 @@ footer h4 a{
     color: white;
     list-style: none;
     text-decoration: none;
+    border-bottom: .5px solid white;
 }
 footer h4 a:hover{
     border-bottom: 1.5px solid white;
 }
 
 
-/*RESPONSIVIDADE*/
+/*   RESPONSIVIDADE   */
 
 @media(min-width: 580px){
     body{
         margin: 30px 150px;
     }
 }
+
+/*   EXTRAS   */
