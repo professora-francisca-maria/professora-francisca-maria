@@ -1,0 +1,73 @@
+form, section, a, img, div, button, input {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-top: 80px;
+    background-image: url(../img/Imagem-Fundo-1920.jpg);
+    background-attachment: fixed;
+    background-size: 30%;/*Controle do fundo*/
+}
+
+h1 {
+    font-size: .9em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.content-center {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.content-center .text-center {
+    text-align: center;
+}
+
+.content-center img {
+    width: 70%;
+}
+
+.content-center form {
+    margin: 20px;
+}
+
+.content-center input, .content-center #btn-submit {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;/*Retirando as bordas dos botões*/
+    outline: none;/*Retirando outline dos campos de preenchimento.*/
+}
+
+.content-center input {
+    border-bottom-color: #CCC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+}
+
+.content-center input:focus {
+    border-bottom-color: #61988E;/*Quando clicar, a borda muda para a cor informada.*/
+}
+
+.content-center #btn-submit {
+    background-color: #61988E;
+    color: #FFF;
+}
+
+.content-center #btn-submit:hover {
+    background-color: #54706b;/*Um verde mais escuro*/
+    cursor: pointer;
+}
+
+.content-center #btn-submit:active {
+    background-color: #61988E;/*Mudar a cor ao clicar no botton*/
+}

@@ -4,54 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIBLIOTECA DIGITAL: EPFM</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="assets/css/acesso.css">
+
 </head>
 <body>
-    <header>
-        <img src="assets/img/cats.jpg" alt="Logo da Escola">
-        <h1>BIBLIOTECA DIGITAL: Escola Professora<br> Francisca Maria</h1>
-    </header>
-
-    <main>
-        <div>
-            <p><b>AVISO:</b> Os arquivos aqui espostos são de valores públicos compartilhados pelos alunos da Escola Professora Francisca Maria. E o mesmo só é permitido consultas. Venda ou distribuição do conteúdo é proibido.</p>
-        </div>
-        
-        <h2>Acervo listado em ordem alfabética:</h2>
-
-        <div>
-            <ul>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-                <li>sd</li>
-            </ul>
-        </div>
-    </main>
-
-    <footer>
-        <h3>Sobre a Escola:</h3>
-        <ul>
-            <li>Ensino Fundamental 6° ao 9° ano e EJA</li>
-            <li>E-mail: fmssantos18@gmail.com</li>
-            <li>Rua: Joaquim Vidal, s/n - Rua nova - Tenente Ananias - RN</li>
-            <li>CEP: 59955-000 &#124; INEP: 24084069 &#124; CNPJ: 09582.822/0001-00</li>
-        </ul>
-
-        <hr>
-
-        <h4>&copy; - <a href="https://genilsoncavalcante.github.io/" title="Portifólio do Desenvolvedor" target="_blank"> Genilson Cavalcante</a></h4>
-    </footer>
     
+    <section class="content-center">
+
+        <h1>BIBLIOTECA DIGITAL</h1>
+
+        <div class="text-center">
+            <img src="assets/img/cats.jpg" alt="Logo da Escola">
+        </div>
+
+        <p><span id="saudacoes"></span> Seja Bem vindo(a)</p>
+
+        <form id="form-login" name="form">
+            
+            <div>
+                <input type="password" id="password" placeholder="Digite a senha" required>
+            </div>
+
+            
+            <div>
+                <input type="button" id="btn-submit" value="login" onClick='verificacao()'>
+            </div>
+            
+            <!--
+            <div>
+                <button id="btn-submit" onClick='verificacao()'>Enviar</button>
+            </div>
+            
+
+            <div>
+                <input id="btn-submit" type="submit"  onClick='verificacao()'>
+            </div>
+            -->
+            
+            
+        </form>
+
+
+
+    </section>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
