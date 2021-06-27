@@ -76,6 +76,11 @@ main div p{
 main p{
 
 }
+main #lerMais, #lerMenos{
+    color: blue;
+    border-bottom: blue solid 1px;
+    cursor: pointer;
+}
 main h2{
     
 }

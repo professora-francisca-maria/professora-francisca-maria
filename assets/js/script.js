@@ -1,15 +1,12 @@
-//SENHA
+//PASSWORD
 
 function verificacao() {
-    console.log('Entrou!');
 
     var input = document.querySelector("input#password");
     var senha = input.value;
-    console.log(senha);
 
 
     if (senha == 123) {
-        //location = "main.html";
         window.location.href='../../main.html';
 
         return;
@@ -21,32 +18,8 @@ function verificacao() {
             window.location.href='../../index.html';
         }
     }
-    
-
-
 }
 
-
-
-
-
-
-
-
-
-/*
-var input = document.querySelector("input#password");
-var senha = input.value;
-
-console.log(senha);
-
-
-if (form.name.value == 123) {
-    location = "main.html";
-} else {
-    alert("Dados Inválidos");
-}
-*/
 
 //SAUDAÇÕES
 
@@ -55,7 +28,7 @@ var hora = agora.getHours();
 
 if (hora <= 5) {
     var saudacoes = window.document.querySelector('span#saudacoes');
-    saudacoes.innerText = 'Boa Madrugada!';
+    saudacoes.innerText = 'Boa Madruga!';
 } else {
     if (hora < 12) {
         var saudacoes = window.document.querySelector('span#saudacoes');
@@ -69,4 +42,38 @@ if (hora <= 5) {
             saudacoes.innerText = 'Boa Noite!';
         }
     }
+}
+
+//LER MAIS
+
+function lerMais() {
+
+    var lerMais = document.getElementById("lerMais");
+    var sumir = document.getElementById("sumir");
+    var lerMenos = document.getElementById("lerMenos");
+
+
+    if(sumir.style.display === "none") {
+        lerMais.style.display = 'none';
+        sumir.style.display = 'inline';
+        lerMenos.style.display = 'inline';
+    }else {
+        lerMais.style.display = 'inline';
+        sumir.style.display = "none";
+        lerMenos.style.display = 'none';
+    }
+
+/*
+    var texto = window.document.getElementById('lerMais');
+
+    texto.innerHTML = `Na qual os mesmo possuem de suas versão física e estão upando para essa plataforma com objetivo de oferecer exclusivamente para uso parcial em pesquisas e estudos acadêmicos. Venda ou distribuição do conteúdo é ilegal. <a href=""><span id='lerMenos'>Ler menos.</span></a>`
+
+    texto.style.color = 'black';
+    texto.style.cursor = 'inherit';
+    texto.style.border = 'none';
+    
+    lerMenos.style.color = 'blue';
+    lerMenos.style.cursor = 'pointer';
+    lerMenos.style.borderBottom = 'blue solid 1px';
+*/
 }
