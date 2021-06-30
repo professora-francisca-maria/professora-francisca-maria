@@ -25,21 +25,35 @@ function verificacao() {
 
 var agora = new Date();
 var hora = agora.getHours();
+var saudacoes = window.document.querySelector('span#saudacoes');
+//var background = window.document.getElementById('background');
+
 
 if (hora <= 5) {
-    var saudacoes = window.document.querySelector('span#saudacoes');
-    saudacoes.innerText = 'Boa Madruga!';
+    //var saudacoes = window.document.querySelector('span#saudacoes');
+    //saudacoes.innerText = 'Boa Madruga!';
+    document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
 } else {
     if (hora < 12) {
-        var saudacoes = window.document.querySelector('span#saudacoes');
-        saudacoes.innerText = 'Bom dia!';
+        //var saudacoes = window.document.querySelector('span#saudacoes');
+        //saudacoes.innerText = 'Bom dia!';
     } else {
         if (hora < 18) {
-            var saudacoes = window.document.querySelector('span#saudacoes');
+            //var saudacoes = window.document.querySelector('span#saudacoes');
+
+            document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
             saudacoes.innerText = 'Boa Tarde!';
+
+            //document.getElementById("background").style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
+
+            //background.style.backgroundImage = 'url(../img/Fundo-preto-claro-alterada.png)';
+            
+            //document.body.style.backgroundAttachment = "fixed";
+            //document.body.style.backgroundSize = "30%";
         } else {
-            var saudacoes = window.document.querySelector('span#saudacoes');
-            saudacoes.innerText = 'Boa Noite!';
+            //var saudacoes = window.document.querySelector('span#saudacoes');
+            //saudacoes.innerText = 'Boa Noite!';
+            document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
         }
     }
 }
@@ -49,17 +63,17 @@ if (hora <= 5) {
 function lerMais() {
 
     var lerMais = document.getElementById("lerMais");
-    var sumir = document.getElementById("sumir");
+    var apareceDesaparece = document.getElementById("aparece-desaparece");
     var lerMenos = document.getElementById("lerMenos");
 
 
-    if(sumir.style.display === "none") {
+    if(apareceDesaparece.style.display === "none") {
         lerMais.style.display = 'none';
-        sumir.style.display = 'inline';
+        apareceDesaparece.style.display = 'inline';
         lerMenos.style.display = 'inline';
     }else {
         lerMais.style.display = 'inline';
-        sumir.style.display = "none";
+        apareceDesaparece.style.display = "none";
         lerMenos.style.display = 'none';
     }
 
