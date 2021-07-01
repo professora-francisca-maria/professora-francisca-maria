@@ -5,11 +5,8 @@ function verificacao() {
     var input = document.querySelector("input#password");
     var senha = input.value;
 
-
     if (senha == 123) {
         window.location.href='../../main.html';
-
-        return;
     } else {
         if (senha == "") {
             alert('Por favor, digite a senha.')
@@ -23,25 +20,42 @@ function verificacao() {
 
 //SAUDAÇÕES
 
-var agora = new Date();
-var hora = agora.getHours();
+let agora = new Date();
+let milisegundos = 3600000 - (agora.getMinutes() * 60000);
+
 var saudacoes = window.document.querySelector('span#saudacoes');
 
 
-if (hora <= 5) {
-    document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
-    saudacoes.innerText = 'Boa Madruga!';
-} else {
-    if (hora < 12) {
-        saudacoes.innerText = 'Bom dia!';
+temporizador();
+
+function temporizador() {
+
+    let tempo = new Date();
+
+    if (tempo.getHours() <= 5) {
+        document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
+        saudacoes.innerText = 'Boa Madruga!';
     } else {
-        if (hora < 18) {
-            saudacoes.innerText = 'Boa Tarde!';
+        if (tempo.getHours() < 12) {
+            saudacoes.innerText = 'Bom dia!';
         } else {
-            document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
-            saudacoes.innerText = 'Boa Noite!';
+            if (tempo.getHours() < 18) {
+                saudacoes.innerText = 'Boa Tarde!';
+            } else {
+                document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
+                saudacoes.innerText = 'Boa Noite!';
+            }
         }
     }
+
+    setTimeout(retornarFuncao, milisegundos);
+}
+
+function retornarFuncao() {
+    
+    milisegundos = 3600000;
+    return temporizador();
+
 }
 
 
