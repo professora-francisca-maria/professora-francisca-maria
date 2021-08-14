@@ -8,8 +8,6 @@ ESTRUTURA BASE
 ***** HEADER
 ***** MAIN
 ***** FOOTER
-***** RESPONSIVIDADE
-***** EXTRAS
 */
 
 
@@ -34,6 +32,7 @@ body{
     background-attachment: fixed;
     background-size: 30%;
 }
+
 
 /*   HEADER   */
 header{
@@ -73,16 +72,13 @@ main div p{
     border-radius: 10px;
     font-size: 0.9em;
 }
-main p{
-
+main h2 {
+    font-size: 1.04em;
 }
 main #lerMais, #lerMenos{
     color: blue;
     border-bottom: blue solid 1px;
     cursor: pointer;
-}
-main h2{
-    
 }
 
 /*   FOOTER   */
@@ -114,13 +110,3 @@ footer h4 a{
 footer h4 a:hover{
     border-bottom: 1.5px solid white;
 }
-
-
-/*   RESPONSIVIDADE   */
-
-@media(min-width: 580px){
-    body{
-        margin: 30px 150px;
-    }
-}
-/*   EXTRAS   */

@@ -1,0 +1,124 @@
+/*VARIÁVEIS*/
+
+:root{
+    --corBackgroundSecundaria: #04133d;
+    --corBackgroundTerciaria: #d4e9ff;
+    --corBackgroundDark: #1f1e1e;
+    --corTextPrimaria: #636363;
+    --corTextSecundaria: #000;
+/*     --urlFundoEscuro: url('../img/Fundo-preto-claro-alterada.png');
+    --urlFundoClaro: url('../img/Imagem-Fundo.jpg'); */
+}
+
+/*ESTILIZAÇÃO DO BUTTON*/
+input#ativar-dark{
+    display: none;
+}
+
+/* header .container{
+    position: relative;
+} */
+
+label {
+    border: 3px solid#537df1;
+    color: var(--corTextSecundaria);
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    width: 53px;
+    height: 30px;
+    background-color: var(--corBackgroundSecundaria);
+    border-radius: 20px;
+    padding: 2px 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+label span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: var(--corBackgroundTerciaria);
+    border-radius: 100%;
+    transition: all ease .4s;
+}
+
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: var(--corBackgroundTerciaria);
+}
+.ativar-dark:checked ~ .dark-mode label span{
+    background-color: var(--corBackgroundSecundaria);
+    /*margin-left: 22px;*/
+    transform: translateX(22px);
+    transition: all ease .4s;
+}
+
+.ativar-dark:checked ~ .dark-mode{
+    --corBackgroundPrimaria: #000;
+    --corBackgroundSecundaria: #000;
+    --corTextPrimaria: #fff;
+    --corTextSecundaria: #fff;
+/*     --urlFundoEscuro: url('assets/img/Fundo-preto-claro-alterada.png');
+    --urlFundoClaro: url('assets/img/Fundo-preto-claro-alterada.png'); */
+}
+
+
+/*estilizando a cor de fundo da página*/
+
+.ativar-dark:checked ~ .dark-mode{
+    background-color: var(--corBackgroundPrimaria);
+    /* background-image: var(--urlFundoClaro); */
+} 
+.ativar-dark:checked ~ .dark-mode{
+    background-color: var(--corBackgroundDark);
+    /* background-image: var(--urlFundoEscuro); */
+} 
+
+
+
+
+/*************************************************/
+
+/*
+
+
+input{
+    display: none;
+}
+
+header{
+    position: relative;
+}
+label {
+    border: 3px solid#537df1;
+    color: var(--corTextSecundaria);
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    width: 53px;
+    height: 30px;
+    background-color: var(--corBackgroundSecundaria);
+    border-radius: 20px;
+    padding: 2px 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+label span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: var(--corBackgroundTerciaria);
+    border-radius: 100%;
+    transition: all ease .4s;
+}
+
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: var(--corBackgroundTerciaria);
+}
+.ativar-dark:checked ~ .dark-mode label span{
+    background-color: var(--corBackgroundSecundaria);
+    /*margin-left: 22px;
+    transform: translateX(22px);
+    transition: all ease .4s;
+}
+
+*/

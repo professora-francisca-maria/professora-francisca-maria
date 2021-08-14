@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
+    <title>BIBLIOTECA DIGITAL: EPFM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/acesso.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <style>
+        /*RESPONSIVIDADE*/
+        @media(max-width: 700px){
+            body{
+                margin: 50px 20px;
+                background-size: 70%;
+            }
+        }
 
+        @media(min-width: 700px){
+            body{
+                margin: 30px 150px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-    <section class="content-center">
 
-        <h1>BIBLIOTECA DIGITAL</h1>
+<!--     <input type="checkbox" id="ativar-dark" class="ativar-dark" onclick="verificar()">
+    <div class="dark-mode"> Agrupando todo o conteúdo
 
-        <div class="text-center">
-            <img src="assets/img/cats.jpg" alt="Logo da Escola">
+        <div class="container">
+            <label for="ativar-dark">
+                <span></span>
+            </label>
         </div>
 
-        <p><span id="saudacoes"></span> Seja Bem vindo(a)</p>
+    </div> -->
 
-        <form id="form-login" name="form" onsubmit="return false;">
-            
-            <div>
-                <input type="password" id="password" placeholder="Digite a senha" required>
+
+    <!-- TELA DE LOGIN -->
+    <div id="bloco">
+        <section class="content-center">
+
+            <h1>BIBLIOTECA DIGITAL</h1>
+    
+            <div class="text-center">
+                <img src="assets/img/cats.jpg" alt="Logo da Escola">
             </div>
+    
+            <p><span id="saudacoes"></span> Seja Bem vindo(a)</p>
+    
+            <form id="form-login" name="form" onsubmit="return false;">
+                
+                <div>
+                    <input type="password" id="password" placeholder="Digite a senha" required>
+                </div>
+    
+                <div>
+                    <input id="btn-submit" type="submit" onClick='verificacao()'>
+                </div>
+                
+            </form>
+    
+        </section>
+    </div> 
 
-            <div>
-                <input id="btn-submit" type="submit"  onClick='verificacao()'>
-            </div>
-            
-        </form>
-
-    </section>
-
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
