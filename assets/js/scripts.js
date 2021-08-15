@@ -30,7 +30,7 @@ function temporizador() {
     let tempo = new Date();
 
     if (tempo.getHours() <= 5) {
-        document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
+        //document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
         saudacoes.innerText = 'Boa Madruga!';
     } else {
         if (tempo.getHours() < 12) {
@@ -39,7 +39,7 @@ function temporizador() {
             if (tempo.getHours() < 18) {
                 saudacoes.innerText = 'Boa Tarde!';
             } else {
-                document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
+                //document.body.style.backgroundImage = "url('assets/img/Fundo-preto-claro-alterada.png')";
                 saudacoes.innerText = 'Boa Noite!';
             }
         }
